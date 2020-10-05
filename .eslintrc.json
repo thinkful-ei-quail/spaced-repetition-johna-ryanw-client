@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "react-app",
+    "airbnb",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": ["jsx-a11y", "prettier"],
+  "rules": {
+    "react/no-array-index-key": [0],
+    "react/state-in-constructor": [0],
+    "react/static-property-placement": [0],
+    "react/prefer-stateless-function": [0],
+    "react/jsx-filename-extension": [0],
+    "react/no-access-state-in-setstate": [0],
+    "react/forbid-prop-types": [0],
+    "jsx-a11y/label-has-associated-control": [0],
+    "jsx-a11y/no-onchange": [0],
+    "import/extensions": "off",
+    "camelcase": [0],
+    "class-methods-use-this": [0],
+    "import/no-extraneous-dependencies": [0],
+    "jsx-quotes": ["error", "prefer-double"],
+    "react/jsx-curly-newline": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": true,
+        "singleQuote": true
+      }
+    ]
+  }
+}

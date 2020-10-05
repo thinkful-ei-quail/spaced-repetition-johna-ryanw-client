@@ -1,0 +1,18 @@
+.WordBox {
+  border: 1px solid yellow;
+  padding: 2px;
+  margin: 5px;
+  min-width: 40%;
+}
+
+.WordBox h4 {
+  text-align: center;
+  font-size: 22px;
+  background-color: aliceblue;
+  margin: 10px 20px;
+  border-radius: 10px;
+}
+
+.WordBox p {
+  padding-left: 10px;
+}

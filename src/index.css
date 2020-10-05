@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #1d1f21;
+  color: #1a1c1d;
+}
+
+a {
+  color: #061863;
+  text-decoration: none;
+}
+
+a::before {
+  content: '[ ';
+}
+
+a::after {
+  content: ' ]';
+}
+
+a:hover {
+  color: #700299;
+  text-decoration: underline;
+}
+
+:root {
+  --font-size: calc(10px + 1vmin);
+}
