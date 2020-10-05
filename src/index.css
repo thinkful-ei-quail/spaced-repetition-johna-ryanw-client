@@ -14,12 +14,20 @@ body {
   color: #1a1c1d;
 }
 
-body a {
+a {
   color: #061863;
   text-decoration: none;
 }
 
-body a:hover {
+a::before {
+  content: '[ ';
+}
+
+a::after {
+  content: ' ]';
+}
+
+a:hover {
   color: #700299;
   text-decoration: underline;
 }
