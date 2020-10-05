@@ -36,7 +36,7 @@ class Header extends Component {
     return (
       <header>
         <h1>
-          <Link to="/">Spaced</Link>
+          <Link to="/">Spaced repetition</Link>
         </h1>
         <div className="intro">
           <p>
