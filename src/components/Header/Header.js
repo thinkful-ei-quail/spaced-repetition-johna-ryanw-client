@@ -40,7 +40,7 @@ class Header extends Component {
         </h1>
         <div className="intro">
           <p>
-            Practice learning a new language with the spaced repetition revision
+            Practice learning a language with the spaced repetition revision
             technique.
           </p>
         </div>
