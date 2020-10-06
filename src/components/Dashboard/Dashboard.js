@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import ApiService from '../../services/api-service';
 import WordBox from '../WordBox/WordBox';
 
@@ -33,13 +34,14 @@ export default class Dashboard extends Component {
     const { score, words } = this.state;
     return (
       <>
-        <div className="Dashboard_Overview">
+        <section className="Dashboard_Overview">
           <h2>You are learning Spanish</h2>
-          <p>Total Score is {score}</p>
-          <h3>Words to Practice</h3>
-        </div>
+          <p>Total correct answers: {score}</p>
+          <h3>Words to practice</h3>
+          <Link to="/learn">Start practicing</Link>
+        </section>
 
-        <div className="WordBox_Container">{this.renderWordBoxes(words)}</div>
+        <ul className="WordBox_Container">{this.renderWordBoxes(words)}</ul>
       </>
     );
   }

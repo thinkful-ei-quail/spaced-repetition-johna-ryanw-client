@@ -7,11 +7,11 @@ export default class WordBox extends Component {
     const { correct_count, incorrect_count, original } = this.props.word;
 
     return (
-      <div className="WordBox">
+      <li className="WordBox">
         <h4>{original}</h4>
         <p>correct answer count: {correct_count}</p>
         <p>incorrect answer count: {incorrect_count}</p>
-      </div>
+      </li>
     );
   }
 }
