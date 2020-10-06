@@ -1,0 +1,9 @@
+.Dashboard_Overview {
+  text-align: center;
+}
+
+.WordBox_Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
