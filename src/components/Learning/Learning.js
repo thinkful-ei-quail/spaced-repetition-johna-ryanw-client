@@ -83,17 +83,26 @@ class Learning extends Component {
     const { nextWord, wordCorrectCount, wordIncorrectCount } = this.state;
     return (
       <section>
-        <h3>Translate the word:</h3>
+        <h2>Translate the word:</h2>
         <span className="nextWord_span">{nextWord}</span>
+        <p> You have answered this word correctly {wordCorrectCount} times. </p>
+        <p>
+          {' '}
+          You have answered this word incorrectly {
+            wordIncorrectCount
+          } times.{' '}
+        </p>
         <form onSubmit={this.handleGuess} className="Learning_form">
-          <Label htmlFor="Learning_guess_input"></Label>
+          <Label htmlFor="learn-guess-input">
+            What's the translation for this word?
+          </Label>
           <Input
             type="text"
-            name="Learning_guess_input"
-            id="Learning_guess_input"
+            name="learn-guess-input"
+            id="learn-guess-input"
             required
           ></Input>
-          <Button type="submit">Submit</Button>
+          <Button type="submit">Submit your answer</Button>
         </form>
       </section>
     );

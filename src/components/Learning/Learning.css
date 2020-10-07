@@ -2,6 +2,19 @@
   text-align: center;
 }
 
+.Learning_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.Learning_form input {
+  margin: 12px auto;
+}
+
+.Learning_form button {
+  margin: 0 auto;
+}
+
 .nextWord_span {
   font-size: 24px;
 }
