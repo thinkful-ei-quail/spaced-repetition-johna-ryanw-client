@@ -111,17 +111,17 @@ class Learning extends Component {
     let { original, translation, guess, isCorrect } = this.state;
 
     return (
-      <section className="answer_section">
+      <section className="DisplayFeedback">
         {isCorrect ? (
-          <h2>You were correct!</h2>
+          <h2>You were correct! :D</h2>
         ) : (
-          <h2>Good try, but not quite right!</h2>
+          <h2>Good try, but not quite right :(</h2>
         )}
         <p>
           The correct translation for {original} was {translation} and you chose{' '}
-          {guess}
+          {guess}!
         </p>
-        <Button onClick={this.handleNextWord}>Try another word</Button>
+        <Button onClick={this.handleNextWord}>Try another word!</Button>
       </section>
     );
   };
@@ -130,7 +130,7 @@ class Learning extends Component {
     let { totalScore } = this.state;
     return (
       <div className="Learning">
-        <section className="Scoreboard">
+        <section className="DisplayScore">
           <p>Your total score is: {totalScore}</p>
         </section>
         {this.state.showResults ? this.renderAnswer() : this.renderNextWord()}
