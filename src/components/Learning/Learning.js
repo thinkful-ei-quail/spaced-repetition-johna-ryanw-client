@@ -52,7 +52,7 @@ class Learning extends Component {
   handleGuess = (e) => {
     e.preventDefault();
 
-    let guess = e.target['Learning_guess_input'].value;
+    let guess = e.target['learn-guess-input'].value;
     guess = guess.toLowerCase();
     this.setState({
       guess
