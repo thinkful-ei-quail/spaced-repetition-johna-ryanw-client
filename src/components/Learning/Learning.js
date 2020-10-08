@@ -21,7 +21,6 @@ class Learning extends Component {
 
   componentDidMount() {
     this.getFirstWord();
-    console.log('word up');
   }
 
   getFirstWord = () => {
@@ -30,7 +29,7 @@ class Learning extends Component {
       this.setState({
         showResults: false,
         nextWord: data.nextWord,
-        ordinal: data.nextWord,
+        original: data.nextWord,
         totalScore: data.totalScore,
         wordCorrectCount: data.wordCorrectCount,
         wordIncorrectCount: data.wordIncorrectCount
@@ -42,8 +41,8 @@ class Learning extends Component {
     ApiService.getNextWord().then((data) => {
       this.setState({
         original: data.nextWord,
-        wordCorrectCount: data.wordCorrectCount,
-        wordIncorrectCount: data.wordIncorrectCount,
+        wordCorrectCount: data.wordIncorrectCount,
+        wordIncorrectCount: data.wordCorrectCount,
         showResults: false
       });
     });
@@ -52,7 +51,7 @@ class Learning extends Component {
   handleGuess = (e) => {
     e.preventDefault();
 
-    let guess = e.target['Learning_guess_input'].value;
+    let guess = e.target['learn-guess-input'].value;
     guess = guess.toLowerCase();
     this.setState({
       guess
@@ -134,7 +133,7 @@ class Learning extends Component {
         <section className="Scoreboard">
           <p>Your total score is: {totalScore}</p>
         </section>
-        {this.state.showResults ? this.renderResults() : this.renderNextWord()}
+        {this.state.showResults ? this.renderAnswer() : this.renderNextWord()}
       </div>
     );
   }
