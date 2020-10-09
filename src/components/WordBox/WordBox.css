@@ -1,5 +1,6 @@
 .WordBox {
-  border: 1px solid yellow;
+  border: 1px solid #b7de55;
+  border-radius: 15px;
   padding: 2px;
   margin: 5px;
   min-width: 40%;

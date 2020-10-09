@@ -37,8 +37,10 @@ export default class Dashboard extends Component {
         <section className="Dashboard_Overview">
           <h2>You are learning Spanish</h2>
           <p>Total correct answers: {score}</p>
+          <Link className="StartPracticing_link" to="/learn">
+            Start practicing
+          </Link>
           <h3>Words to practice</h3>
-          <Link to="/learn">Start practicing</Link>
         </section>
 
         <ul className="WordBox_Container">{this.renderWordBoxes(words)}</ul>

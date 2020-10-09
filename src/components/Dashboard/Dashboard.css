@@ -6,6 +6,21 @@ li {
   text-align: center;
 }
 
+.Dashboard_Overview > * {
+  margin: 30px 0;
+}
+
+.Dashboard_Overview p {
+  font-size: 20px;
+}
+
+.StartPracticing_link {
+  background-color: #b7de55;
+  padding: 14px;
+  font-size: 24px;
+  border-radius: 10px;
+}
+
 .WordBox_Container {
   display: flex;
   flex-wrap: wrap;
