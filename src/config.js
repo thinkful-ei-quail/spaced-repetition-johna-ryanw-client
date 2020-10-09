@@ -1,4 +1,4 @@
 export default {
-  API_ENDPOINT: 'https://sleepy-sands-61500.herokuapp.com/api',
-  TOKEN_KEY: 'blogful-client-auth-token'
+  API_ENDPOINT: process.env.REACT_APP_API_BASE_URL,
+  TOKEN_KEY: 'spaced-client-auth-token'
 };
